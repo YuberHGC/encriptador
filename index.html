@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <main class="contenedor">
+        <div class="encriptar">
+            <textarea class="texto"
+              name="texto"
+              id="texto"
+              cols="30"
+              rows="10"
+              placeholder="Ingresa el texto aquí"
+            ></textarea>
+
+            <div class="logo">
+                <img src="imagenes/Logo.png" alt="" id="imagen_logo">
+            </div>
+
+            <div class="terminos">
+                <img src="imagenes/icon.png" alt="" id="imagen_icon">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+
+            <div class="botones">
+                <button class="btn-encriptar" type="button" 
+                        onclick="encriptar()">
+                    Encriptar
+                </button>
+                <button class="btn-desencriptar" type="button" 
+                        onclick="desencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </div>
+
+        <div class="encriptado">
+            <img src="imagenes/muñeco.png" alt="" id="muñeco" />
+            <div class="mensaje_encriptado" id="mensaje_encriptado">
+              <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+              <p id="parrafo">
+                Ingresa el texto que deseas encriptar o desencriptar
+              </p>
+            </div>
+          </div>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Yuber Gutierrez</p>
+    </footer>
+</body>
+
+<script src="index.js"></script>
+
+</html>
